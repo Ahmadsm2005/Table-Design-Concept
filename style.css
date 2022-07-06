@@ -1,0 +1,73 @@
+body{
+  background-image: linear-gradient(#151515,#303030);
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+table{
+  border-collapse: collapse;
+  width: 50vmin;
+  margin-left: auto;
+  margin-right: auto;
+}
+th{
+  border-top: none;
+  border-style: solid;
+  border-collapse: collapse;
+  background-image: radial-gradient(#1a0433,#210342);
+  font-size: 1.4em;
+  text-align: center;
+  border-color: #000000;
+  color: #FFFFFF;
+  border-width: 2px;
+}
+td{
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000000;
+  padding: 5px;
+  border-collapse: collapse;
+  font-size: 1.2em;
+  color: #FFFFFF;
+  text-align: center;
+}
+tr:nth-child(even){
+  background-image: radial-gradient(#050020,#171030);
+}
+tr:nth-child(odd){
+  background-image: radial-gradient(#11003f,#21105f);
+}
+@keyframes border_Color {
+  0%   {background-color: orange;}
+  50%  {border-color: gold;}
+  100%  {border-color: orange;}
+}
+@keyframes border_Color2 {
+  0%   {border-color: #0099FF;}
+  50%  {border-color: #00FFCC;}
+  100%  {border-color: #0099FF;}
+}
+tr:hover{
+  border-width: 2px;
+  border-style: solid;
+  border-color: orange;
+  animation-name: border_Color;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+.selected{
+  border-style: solid;
+  border-width: 2px;
+  background-image: radial-gradient(#555555,#777777);
+  animation-name: border_Color2;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+}
+.selected:hover{
+  border-style: solid;
+  animation-name: border_Color2;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+}
